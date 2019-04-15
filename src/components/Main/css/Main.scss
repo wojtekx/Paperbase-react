@@ -1,0 +1,73 @@
+.Main{
+    .modal{
+        width: 70%;
+        margin: 50px auto;
+        box-shadow: 0 0 2px 2px #b4b4b4;
+        border-radius: 10px;
+        .form{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 50px;
+            padding: 5px 15px;
+            border-bottom: 1px solid gray;
+            .input{
+                display: flex;
+                align-items: center;
+                *{
+                    margin: 0 5px;
+                }
+                input{
+                    background-color: transparent;
+                    border: none;
+                    padding: 4px;
+                    @media(max-width: 768px){
+                        width: 80%;
+                    }
+                }
+                img{
+                    filter: brightness(-30%);
+                }
+            }
+            .btn{
+                display: flex;
+                align-items: center;
+                *{
+                    margin: 0 5px;
+                }
+                button{
+                    background-color: #009be5;;
+                    color: white;
+                    font-size: 15px;
+                    padding: 8px 11px;
+                    border-radius: 10px;
+                    border: 1px solid #009be5;;
+                    cursor: pointer;
+                    @media(max-width: 768px){
+                        font-size: 14px;
+                        width: 90px;
+                        padding: 9px 13px;
+                    }
+                }
+                img{
+                    filter: brightness(-30%);
+                    cursor: pointer;
+                }
+            }
+        }
+        .field{
+            min-height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            color: #666;
+            border-radius: 10px;
+            p{
+                @media(max-width: 768px){
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
